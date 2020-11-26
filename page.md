@@ -112,8 +112,12 @@ waitgroup 类似信号量,add操作相当于设置初始值，done()相当于 si
 ## GMP 调度原理
 [demo(调整GOMAXPROCS)](https://github.com/Neilai/go-learning/blob/master/goroutine/waitgroup/waitgroup-demo.go)
 
+![](http://www.topgoer.com/static/7.1/gmp/12.jpg)
+
 M(线程)的数量是内部设定的，Go程序会尽量多设置。
+
 P(逻辑调度器)的数量通过GOMAXPROCS设置，通过waitgroup demo也可以看到，当runtime.GOMAXPROCS(2)设置为2的时候，两个协程是并行运行输出的。
+
 ## 竞态
 [demo](https://github.com/Neilai/go-learning/blob/master/goroutine/race/race-demo.go)
 
