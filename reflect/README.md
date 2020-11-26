@@ -1,0 +1,3 @@
+## 反射
+反射是指在运行时操作任意类型对象的能力。我们可以通过reflect.ValueOf和reflect.typeOf获取对象的值和类型。
+运行时遍历对象字段和方法见demo
